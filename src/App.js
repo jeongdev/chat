@@ -4,17 +4,16 @@ import Header from "./components/header/Header";
 import Chat from "./components/chat/Chatroom";
 
 function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
+    return (
+    < div className = "App" >
+        <BrowserRouter>
         <Header />
         <Routes>
-          {" "}
-          <Route path="/" element={<Chat />} />{" "}
-        </Routes>{" "}
-      </BrowserRouter>{" "}
-    </div>
-  );
+        <Route path="/" element = {<Chat />} />
+        </Routes >
+        </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

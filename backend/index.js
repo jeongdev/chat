@@ -18,6 +18,8 @@ app.use(cors());
 
 app.post("/", async (req, res) => {
     const { message } = req.body;
+    console.log('message', message)
+    if(!message) return
     const response = await openai.createCompletion({
         model: "text-davinci-003",
         prompt: `${message}`,
